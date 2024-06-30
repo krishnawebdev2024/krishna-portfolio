@@ -1,0 +1,429 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+   overflow: scroll;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+ }
+
+ .header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(91, 100, 137, 0.8),rgba(0,0,0,0.3)),url(images/top\ eevee\ .png) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+ }
+nav{
+   width: 100%;
+    display: flex;
+    padding:1rem;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    background-color: #FBC83B;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5) ;
+    
+}
+
+nav img{
+    width: 8rem;
+    background-color: rgb(255, 255, 255);
+    padding: .8rem;
+    border-radius: .8rem;
+}
+ .nav-links{
+    flex: 1;
+    text-align: right;
+ }
+
+.nav-links ul li{
+list-style: none;
+display: inline-block;
+padding: 0.2rem 2rem ;
+position: relative;
+
+ }
+ .nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+ }
+
+ .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+
+ }
+ .nav-links ul li:hover::after{
+    width: 100%;
+ }
+
+ .textbox{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+ }
+ .textbox h1{
+    font-size: 64px;
+ }
+ .textbox p{
+    margin: 12px 0 40px;
+    font-size: 16px;
+    color: #fff;
+ }
+
+
+
+
+ nav .close-icon{
+    display: none;
+ }
+ nav .menu-icon{
+   display: none;
+}
+
+
+ 
+ /*----------beerclasses----------*/
+
+ .beerclasses{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 6.5rem;
+ }
+
+ h1{
+    font-size: 2rem;
+    font-weight: 600;
+ }
+
+ p{
+    font-size: 1rem;
+    color: cadetblue;
+    font-weight: 300;
+    line-height: 1.5rem;
+    padding: 14px;
+ }
+
+ .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+ }
+
+
+
+ .beersorte{
+    flex-basis: 31%;
+    background: #E8E6DF;
+    border-radius: 8px;
+    margin-bottom: 5%;
+    padding: 24px;
+    box-sizing: border-box;
+ }
+ h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+
+ }
+
+
+ .beersorte:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2) ;
+ }
+
+/*----------uxbeersection----------*/
+
+ .uxbeersection{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 6rem;
+
+ }
+
+
+ /*----------teampix----------*/
+
+ .teampix{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+
+ }
+ .teampix img{
+    width: 100%;
+    display: block;
+ }
+ .layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+ }
+ .layer:hover{
+    background: rgba(226, 0,0,0.7);
+ }
+ .layer h3{
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.5rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+ }
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*----------teampix----------*/
+
+.uxbwest{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 6.5rem;
+}
+/*----------Die Magie des UXB West Teams----------*/
+
+.teammagic{
+flex-basis: 31%;
+border-radius: 12px;
+text-align: left;
+margin-bottom: 5%;
+}
+
+.teammagic img{
+    width: 100%;
+    border-radius: 12px;
+
+}
+
+.teammagic p{
+    padding: 0;
+}
+
+.teammagic h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/*----------testimonials---------*/
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 6.5rem;
+    text-align: center;
+}
+.bandborder{
+    
+    padding: 24px;
+    border-radius: 12px;
+}
+.testimonialscolumn{
+    flex-basis: 44%;
+    border-radius: 12px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #E8E6DF;
+    padding: 24px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonialscolumn img{
+height: 40px;
+margin-left: 5px;
+margin-right: 30px;
+border-radius: 50%;
+
+}
+.testimonialscolumn p{
+    padding: 0;
+}
+.testimonialscolumn  h3{
+   margin-top: 14px;
+   text-align: left;   
+}
+/*----------wishes---------*/
+.wishes{
+    margin: 100px auto;
+    width: 80%;
+    background-image:linear-gradient(rgba(91, 100, 137, 0.8),rgba(0,0,0,0.8)),url(images/festive-christmas-assortment-with-copy-space.jpg) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 12px;
+    padding: 48px 12px;
+    text-align: center;
+    color: aqua;
+}
+
+.wishes a {
+    color: #bdb6b6;
+    text-decoration: none;
+    font-size: 32px‚;
+}
+/*---------Footer---------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 24px  0;
+
+}
+
+.footer h4{
+    margin-bottom: 24px;
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+/*---------Footer---------*/
+.footermessage{
+   box-sizing: border-box;
+
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   gap: 2rem;
+}
+.footermessage img{
+   display: block;
+   width: 100px;  
+    border-radius: 12px;
+    border: none;
+}
+
+
+    
+
+.align{
+   display: flex;
+   flex-direction: column;
+
+   
+}
+
+.totop{
+    flex-basis: 20%;
+  
+   display: flex;
+   justify-content: end;
+    background:#FBC83B;
+    padding: 24px;
+    display: flex;
+    
+    
+    cursor: pointer;
+    
+}
+
+  /*----------smaller screens----------*/
+
+  @media(max-width: 1200px){
+    .wishes{
+        font-size: 16px;
+       
+        }
+
+
+
+
+
+ @media(max-width: 1200px){
+    .row{
+        flex-direction: column;
+    }
+ }
+ 
+
+
+ /*----------smaller screens----------*/
+
+@media(max-width:1200px)
+{
+    .textbox h1
+    {font-size: 20px;}
+    .nav-links ul li{
+        display: block;
+    }
+
+
+    .nav-links 
+    {position: absolute;
+    background: #FBC83B;
+    height: 100vh;
+    width: 350px;
+    top: 0;
+    right: -351px;
+    text-align: left;
+    z-index: 2 ;
+    transition: 1s;
+     }
+
+     nav .close-icon {
+        height: 34px;
+        width: 34px;
+        display: block;
+        color: #fff; /* Correctly applying white color */
+        margin-top: 24px;
+        margin-left: 24px;
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+        margin-top: 64px;
+    }
+
+    nav .menu-icon {
+        height: 34px;
+        width: 34px;
+        display: block;
+       padding: 8px;
+        cursor: pointer;
+        
+     }
+
+
+}
+
+
